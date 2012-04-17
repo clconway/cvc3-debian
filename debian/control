@@ -1,0 +1,205 @@
+Source: cvc3
+Section: math
+Priority: extra
+Maintainer: Christopher L. Conway <cconway@cs.nyu.edu>
+Build-Depends: cdbs, debhelper (>= 7), autoconf, autotools-dev, bison, default-jdk, gcj-native-helper, flex, libgmp-dev | libgmp3-dev, patchutils, python
+Standards-Version: 3.9.3
+Homepage: http://www.cs.nyu.edu/acsys/cvc3/
+Vcs-Bzr: lp:cvc3-packaging
+Vcs-Browser: http://bazaar.launchpad.net/~cvc3/cvc3-packaging/trunk/files
+
+Package: cvc3
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Automatic theorem prover for SMT problems
+ CVC3 is an automatic theorem prover for Satisfiability Modulo Theories
+ (SMT) problems. It can be used to prove the validity (or, dually, the
+ satisfiability) of first-order formulas in a large number of built-in
+ logical theories and their combination.
+ .
+ CVC3 is the last offspring of a series of popular SMT provers, which
+ originated at Stanford University with the SVC system. In particular,
+ it builds on the code base of CVC Lite, its most recent
+ predecessor. Its high level design follows that of the Sammy prover.
+ .
+ CVC3 works with a version of first-order logic with polymorphic types
+ and has a wide variety of features including:
+ .
+  * several built-in base theories: rational and integer linear
+    arithmetic, arrays, tuples, records, inductive data types, bit
+    vectors, and equality over uninterpreted function symbols;
+  * support for quantifiers;
+  * an interactive text-based interface;
+  * rich C, C++, and Java APIs for embedding in other systems;
+  * proof and model generation abilities;
+  * predicate subtyping;
+  * essentially no limit on its use for research or commercial
+    purposes (see license).
+ .
+ This package contains the CVC3 command line program.
+
+Package: libcvc3-5
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Automatic theorem prover library for SMT problems
+ CVC3 is an automatic theorem prover for Satisfiability Modulo Theories
+ (SMT) problems. It can be used to prove the validity (or, dually, the
+ satisfiability) of first-order formulas in a large number of built-in
+ logical theories and their combination.
+ .
+ CVC3 is the last offspring of a series of popular SMT provers, which
+ originated at Stanford University with the SVC system. In particular,
+ it builds on the code base of CVC Lite, its most recent
+ predecessor. Its high level design follows that of the Sammy prover.
+ .
+ CVC3 works with a version of first-order logic with polymorphic types
+ and has a wide variety of features including:
+ .
+   * several built-in base theories: rational and integer linear
+     arithmetic, arrays, tuples, records, inductive data types, bit
+     vectors, and equality over uninterpreted function symbols;
+   * support for quantifiers;
+   * an interactive text-based interface;
+   * rich C, C++, and Java APIs for embedding in other systems;
+   * proof and model generation abilities;
+   * predicate subtyping;
+   * essentially no limit on its use for research or commercial
+     purposes (see license).
+ .
+ This package contains the files necessary for running applications
+ that use the CVC3 library.
+    
+Package: libcvc3-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcvc3-5 (= ${binary:Version})
+Replaces: libcvc3-5-dev, libcvc3-2-dev
+Breaks: libcvc3-5-dev, libcvc3-2-dev
+Description: Automatic theorem prover library for SMT problems (development files)
+ CVC3 is an automatic theorem prover for Satisfiability Modulo Theories
+ (SMT) problems. It can be used to prove the validity (or, dually, the
+ satisfiability) of first-order formulas in a large number of built-in
+ logical theories and their combination.
+ .
+ CVC3 is the last offspring of a series of popular SMT provers, which
+ originated at Stanford University with the SVC system. In particular,
+ it builds on the code base of CVC Lite, its most recent
+ predecessor. Its high level design follows that of the Sammy prover.
+ .
+ CVC3 works with a version of first-order logic with polymorphic types
+ and has a wide variety of features including:
+ .
+   * several built-in base theories: rational and integer linear
+     arithmetic, arrays, tuples, records, inductive data types, bit
+     vectors, and equality over uninterpreted function symbols;
+   * support for quantifiers;
+   * an interactive text-based interface;
+   * rich C, C++, and Java APIs for embedding in other systems;
+   * proof and model generation abilities;
+   * predicate subtyping;
+   * essentially no limit on its use for research or commercial
+     purposes (see license).
+ .
+ This package contains the files necessary for building applications
+ that use the CVC3 library.
+    
+Package: libcvc3-5-java
+Section: java
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcvc3-5-jni (>= ${source:Version})
+Description: Java bindings for CVC3 (bytecode library)
+ CVC3 is an automatic theorem prover for Satisfiability Modulo Theories
+ (SMT) problems. It can be used to prove the validity (or, dually, the
+ satisfiability) of first-order formulas in a large number of built-in
+ logical theories and their combination.
+ .
+ CVC3 is the last offspring of a series of popular SMT provers, which
+ originated at Stanford University with the SVC system. In particular,
+ it builds on the code base of CVC Lite, its most recent
+ predecessor. Its high level design follows that of the Sammy prover.
+ .
+ CVC3 works with a version of first-order logic with polymorphic types
+ and has a wide variety of features including:
+ .
+  * several built-in base theories: rational and integer linear
+    arithmetic, arrays, tuples, records, inductive data types, bit
+    vectors, and equality over uninterpreted function symbols;
+  * support for quantifiers;
+  * an interactive text-based interface;
+  * rich C, C++, and Java APIs for embedding in other systems;
+  * proof and model generation abilities;
+  * predicate subtyping;
+  * essentially no limit on its use for research or commercial
+    purposes (see license).
+ .
+ This package provides architecture-independent files of the Java
+ bindings for CVC3
+
+Package: libcvc3-5-jni
+Section: java
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: libcvc3-2-jni
+Breaks: libcvc3-2-jni
+Description: Java bindings for CVC3 (native library)
+ CVC3 is an automatic theorem prover for Satisfiability Modulo Theories
+ (SMT) problems. It can be used to prove the validity (or, dually, the
+ satisfiability) of first-order formulas in a large number of built-in
+ logical theories and their combination.
+ .
+ CVC3 is the last offspring of a series of popular SMT provers, which
+ originated at Stanford University with the SVC system. In particular,
+ it builds on the code base of CVC Lite, its most recent
+ predecessor. Its high level design follows that of the Sammy prover.
+ .
+ CVC3 works with a version of first-order logic with polymorphic types
+ and has a wide variety of features including:
+ .
+  * several built-in base theories: rational and integer linear
+    arithmetic, arrays, tuples, records, inductive data types, bit
+    vectors, and equality over uninterpreted function symbols;
+  * support for quantifiers;
+  * an interactive text-based interface;
+  * rich C, C++, and Java APIs for embedding in other systems;
+  * proof and model generation abilities;
+  * predicate subtyping;
+  * essentially no limit on its use for research or commercial
+    purposes (see license).
+ .
+ This package provides the native library needed for the Java bindings
+ for CVC3
+
+Package: cvc3-el
+Architecture: all
+Depends: emacs | emacsen, ${misc:Depends}
+Recommends: cvc3
+Enhances: cvc3
+Description: Emacs mode for CVC3
+ CVC3 is an automatic theorem prover for Satisfiability Modulo Theories
+ (SMT) problems. It can be used to prove the validity (or, dually, the
+ satisfiability) of first-order formulas in a large number of built-in
+ logical theories and their combination.
+ .
+ CVC3 is the last offspring of a series of popular SMT provers, which
+ originated at Stanford University with the SVC system. In particular,
+ it builds on the code base of CVC Lite, its most recent
+ predecessor. Its high level design follows that of the Sammy prover.
+ .
+ CVC3 works with a version of first-order logic with polymorphic types
+ and has a wide variety of features including:
+ .
+  * several built-in base theories: rational and integer linear
+    arithmetic, arrays, tuples, records, inductive data types, bit
+    vectors, and equality over uninterpreted function symbols;
+  * support for quantifiers;
+  * an interactive text-based interface;
+  * rich C, C++, and Java APIs for embedding in other systems;
+  * proof and model generation abilities;
+  * predicate subtyping;
+  * essentially no limit on its use for research or commercial
+    purposes (see license).
+ .
+ The package provides an Emacs major mode "cvc3-mode" with syntax
+ highlighting for the CVC3 input language and running CVC3 as an
+ inferior process.

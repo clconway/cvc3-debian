@@ -1,0 +1,58 @@
+Description: Disables dump-log commands in tests.
+ Prevents useless patches in the Debian package.
+Author: Christopher L. Conway <cconway@cs.nyu.edu>
+Last-Update: 2012-03-05
+
+=== modified file 'java/src/cvc3/Test.java'
+--- old/java/src/cvc3/Test.java	2009-12-07 23:19:54 +0000
++++ new/java/src/cvc3/Test.java	2012-03-05 14:18:53 +0000
+@@ -203,7 +203,7 @@
+ 	try {
+ 	    flags = ValidityChecker.createFlags(null);
+ 	    flags.setFlag("dagify-exprs",false);
+-	    flags.setFlag("dump-log", ".test1.cvc");
++	    //flags.setFlag("dump-log", ".test1.cvc");
+ 	    vc = ValidityChecker.create(flags);
+ 	    
+ 	    boolean b = check(vc, vc.trueExpr());
+@@ -1335,7 +1335,7 @@
+ 	try {
+ 	    flags = ValidityChecker.createFlags(null);
+ 	    flags.setFlag("dagify-exprs",false);
+-	    flags.setFlag("dump-log", ".test13.cvc");
++	    //flags.setFlag("dump-log", ".test13.cvc");
+ 	    vc = ValidityChecker.create(flags);
+ 
+ 	    Expr rat_one = vc.ratExpr(1);
+
+=== modified file 'test/main.cpp'
+--- old/test/main.cpp	2012-02-25 18:54:08 +0000
++++ new/test/main.cpp	2012-03-05 14:18:40 +0000
+@@ -125,7 +125,7 @@
+ {
+   CLFlags flags = ValidityChecker::createFlags();
+   flags.setFlag("dagify-exprs",false);
+-  flags.setFlag("dump-log", ".test1.cvc");
++  //flags.setFlag("dump-log", ".test1.cvc");
+   ValidityChecker* vc = ValidityChecker::create(flags);
+   
+   // It is important that all Expr objects are deleted before vc is
+@@ -484,7 +484,7 @@
+ {
+   CLFlags flags = ValidityChecker::createFlags();
+   flags.setFlag("dagify-exprs",false);
+-  flags.setFlag("dump-log", ".test5.cvc");
++  //flags.setFlag("dump-log", ".test5.cvc");
+   ValidityChecker* vc = ValidityChecker::create(flags);
+ 
+   try {
+@@ -1152,7 +1152,7 @@
+ {
+   CLFlags flags = ValidityChecker::createFlags();
+   flags.setFlag("dagify-exprs", false);
+-  flags.setFlag("dump-log", ".test13.cvc");
++  //flags.setFlag("dump-log", ".test13.cvc");
+   ValidityChecker* vc = ValidityChecker::create(flags);
+   try {
+     Expr rat_one = vc->ratExpr(1);
+

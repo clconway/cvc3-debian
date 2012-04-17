@@ -1,0 +1,12 @@
+The .orig.tar.gz is modified from the tarball distributed by upstream.
+It omits the following files, which aren't licensed for redistribution:
+
+src/sat/xchaff_base.h
+src/sat/xchaff_dbase.h
+src/sat/xchaff_solver.h
+src/sat/xchaff_utils.h
+src/sat/xchaff_dbase.cpp
+src/sat/xchaff_solver.cpp
+src/sat/xchaff_utils.cpp
+
+-- Christopher L. Conway <cconway@cs.nyu.edu>  Sun, 26 Feb 2012 17:55:36 -0500

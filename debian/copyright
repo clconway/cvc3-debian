@@ -1,0 +1,118 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: CVC3
+Upstream-Contact: Clark Barret <barret@cs.nyu.edu>
+Source: http://www.cs.nyu.edu/acsys/cvc3/
+
+Files: *
+Copyright: Copyright (C) 2003-2009 by the Board of Trustees of Leland Stanford Junior University, New York University, and the University of Iowa
+License: BSD
+    Redistribution and use in source and binary forms, with or without modification,
+    are permitted provided that the following conditions are met:
+    .
+    * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+    * Neither the names of the Copyright Owners nor the names of any contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+    .
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT OWNERS AND CONTRIBUTORS ''AS IS'' AND ANY
+    EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNERS OR CONTRIBUTORS BE LIABLE FOR ANY
+    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+    ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: src/include/fdstream.h
+Copyright: (C) Copyright Nicolai M. Josuttis 2001.
+License: other
+    Permission to copy, use, modify, sell and distribute this software
+    is granted provided this copyright notice appears in all copies.
+    This software is provided "as is" without express or implied
+    warranty, and with no claim as to its suitability for any purpose.
+
+Files: src/include/hash_*
+Copyright: Copyright 2006, Alexander Fuchs
+Copyright: Copyright (c) 1996,1997 Silicon Graphics Computer Systems, Inc.
+Copyright: Copyright (c) 1994 Hewlett-Packard Company
+License: other
+    License to use, copy, modify, sell and/or distribute this software
+    and its documentation for any purpose is hereby granted without
+    royalty, subject to the terms and conditions defined in the \ref
+    LICENSE file provided with this distribution.
+    .
+    Permission to use, copy, modify, distribute and sell this software
+    and its documentation for any purpose is hereby granted without
+    fee, provided that the above copyright notice appear in all copies
+    and that both that copyright notice and this permission notice
+    appear in supporting documentation.  Silicon Graphics makes no
+    representations about the suitability of this software for any
+    purpose.  It is provided "as is" without express or implied
+    warranty.
+    .
+    Permission to use, copy, modify, distribute and sell
+    this software and its documentation for any purpose is hereby
+    granted without fee, provided that the above copyright notice
+    appear in all copies and that both that copyright notice and this
+    permission notice appear in supporting documentation.
+    Hewlett-Packard Company makes no representations about the
+    suitability of this software for any purpose.  It is provided "as
+    is" without express or implied warranty.
+
+
+Files: src/sat/minisat_*
+Copyright: Copyright (c) 2003-2005, Niklas Een, Niklas Sorensson
+License: MIT
+    Permission is hereby granted, free of charge, to any person
+    obtaining a copy of this software and associated documentation
+    files (the "Software"), to deal in the Software without
+    restriction, including without limitation the rights to use, copy,
+    modify, merge, publish, distribute, sublicense, and/or sell copies
+    of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    .
+    The above copyright notice and this permission notice shall be
+    included in all copies or substantial portions of the Software.
+    .
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+
+Files: debian/*
+Copyright: Copyright 2007-2008, Dan Sheridan <djs@adelard.com>
+Copyright: Copyright 2009, Christopher L. Conway <cconway@cs.nyu.edu> 
+License: BSD
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+    3. Neither the name of the University nor the names of its contributors
+       may be used to endorse or promote products derived from this software
+       without specific prior written permission.
+    .
+    THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+    OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+    HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+    LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+    OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+    SUCH DAMAGE.

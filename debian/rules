@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+# Basic build setup for CDBS
+DEB_MAKE_CLEAN_TARGET := distclean TOP=$(CURDIR)
+DEB_MAKE_INSTALL_TARGET := install prefix=$(DEB_DESTDIR)/usr
+DEB_MAKE_CHECK_TARGET := regress0 LD_LIBRARY_PATH=$(CURDIR)/lib
+DEB_CONFIGURE_EXTRA_FLAGS := --enable-dynamic --enable-java --with-java-home=/usr/lib/jvm/default-java --disable-zchaff
+
+# Don't treat JNI .so's as shlibs
+DEB_DH_MAKESHLIBS_ARGS_libcvc3-2-jni := --exclude=jni
+
+# Have to run configure before distclean, or else make will die
+cleanbuilddir/cvc3::
+	./configure --disable-zchaff
+
+# cvc3-mode.el isn't copied by "make install", so copy it to the 
+# staging directory by hand
+install/cvc3-el::
+	install -m 755 -d debian/cvc3-el/usr/share/emacs/site-lisp/cvc3-el
+	install -m 644 emacs/cvc-mode.el debian/cvc3-el/usr/share/emacs/site-lisp/cvc3-el
+
+# TODO(chris 2/10/2009): Trying to build the static library alongside
+# the shared library is causing too many problems.
+# # Build and install the static library as well as dynamic 
+# build/libcvc3-1.5-dev::
+# 	$(MAKE) STATIC=1
+# 	$(MAKE) $(DEB_MAKE_INSTALL_TARGET) STATIC=1
+# # Run make again so that the installed executables will be dynamic
+# # (The CDBS default install targets will run *after* this)
+# 	$(MAKE) STATIC=0

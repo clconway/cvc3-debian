@@ -1,0 +1,90 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+
+.TH CVC3 1 "January 16, 2008"
+.\" Please adjust this date whenever revising the manpage.
+
+.SH NAME
+cvc3 \- automatic SMT theorem prover
+.SH SYNOPSIS
+.B cvc3
+.BI [ option ]...\ [ filename ]
+
+.SH DESCRIPTION
+.B CVC3 
+is an automated validity checker for a many-sorted (typed)
+first-order logic with built-in theories, including some support for
+quantifiers, partial functions, and predicate subtypes. The current
+built-in theories are the theories of
+.IP \(bu 4
+equality over free (aka uninterpreted) function and predicate symbols,
+.IP \(bu
+real and integer linear arithmetic (with some support for non-linear arithmetic),
+.IP \(bu
+bit vectors,
+.IP \(bu
+arrays,
+.IP \(bu
+tuples,
+.IP \(bu
+records,
+.IP \(bu
+user-defined inductive datatypes.
+.PP
+CVC3 operates on files in the CVC
+.I Presentation Input Language
+or the
+.I SMTLIB
+input language. If no input file is given on the command line, CVC3
+reads standard input.
+
+.SH OPTIONS
+Only a few of the most frequently used options are given below. For
+more details, see CVC3's built-in help 
+.RI ( "cvc3 -help" )
+or the CVC3
+website.
+.TP
+.B \-h[elp]
+List all of the options for controlling CVC3. Boolean options are marked
+.IR (b) .
+.RB "They are enabled by prefixing with " + " and disabled by prefixing with " - .
+.RI "In the help output, the " current " setting is given."
+For example, the output lists
+.IP
+(b) \-interactive      Interactive mode
+
+Indicating that interactive mode is disabled. to enable interactive mode,
+.RI "the option " +interactive " is therefore used."
+.RI "Other options are marked " "(s)" " for string arguments, or " "(i)"
+for integer arguments.
+.TP
+.B \-version
+Print the version of CVC3 and exit.
+.TP
+.B \-lang 
+.RI ( presentation | smtlib | internal )
+Select the input language used. The default is 
+.IR presentation .
+.TP
+.B +int[eractive]
+Enable interactive mode. Commands are read from standard input and
+processed immediately.
+.TP
+.B +stats
+Print run-time statistics.
+.TP
+.BI "\-timeout " t
+.RI "Automatically terminate CVC3 after " t " seconds."
+.PP
+.SH SEE ALSO
+.BR "CVC3 website: " http://www.cs.nyu.edu/acsys/cvc3/
+.P
+.BR "SMTLIB website: " http://combination.cs.uiowa.edu/smtlib/
+.SH AUTHOR
+CVC3 was written by Clark Barrett, Cesare Tinelli, Alexander Fuchs, 
+Yeting Ge, George Hagen, Dejan Jovanovic, Sergey Berezin, Cristian Cadar, 
+Jake Donham, Vijay Ganesh, Deepak Goyal, Ying Hu, Sean McLaughlin, 
+Mehul Trivedi, Michael Veksler, Daniel Wichs, Mark Zavislak, and Jim Zhuang.
+.PP
+This manual page was written by Dan Sheridan <djs@adelard.com>,
+for Ubuntu (but may be used by others).
