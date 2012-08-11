@@ -5,8 +5,8 @@ Maintainer: Christopher L. Conway <cconway@cs.nyu.edu>
 Build-Depends: cdbs, debhelper (>= 7), autoconf, autotools-dev, bison, default-jdk, gcj-native-helper, flex, libgmp-dev | libgmp3-dev, patchutils, python
 Standards-Version: 3.9.3
 Homepage: http://www.cs.nyu.edu/acsys/cvc3/
-Vcs-Bzr: lp:cvc3-packaging
-Vcs-Browser: http://bazaar.launchpad.net/~cvc3/cvc3-packaging/trunk/files
+Vcs-Git: https://github.com/clconway/cvc3-debian.git
+Vcs-Browser: https://github.com/clconway/cvc3-debian
 
 Package: cvc3
 Architecture: any
