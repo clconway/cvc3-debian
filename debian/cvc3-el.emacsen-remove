@@ -10,6 +10,4 @@ PACKAGE=cvc3-el
 if [ ${FLAVOR} != emacs ]; then
     echo remove/${PACKAGE}: purging byte-compiled files for ${FLAVOR}
     rm -rf /usr/share/${FLAVOR}/site-lisp/${PACKAGE}
-else
-  rm -rf /etc/emacs/site-start.d/50${PACKAGE}.el
 fi
