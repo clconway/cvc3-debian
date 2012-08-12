@@ -4,7 +4,7 @@ Upstream-Contact: Clark Barret <barret@cs.nyu.edu>
 Source: http://www.cs.nyu.edu/acsys/cvc3/
 
 Files: *
-Copyright: Copyright (C) 2003-2009 by the Board of Trustees of Leland Stanford Junior University, New York University, and the University of Iowa
+Copyright: 2003-2009, The Board of Trustees of Leland Stanford Junior University, New York University, and the University of Iowa
 License: BSD
     Redistribution and use in source and binary forms, with or without modification,
     are permitted provided that the following conditions are met:
@@ -30,7 +30,7 @@ License: BSD
     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Files: src/include/fdstream.h
-Copyright: (C) Copyright Nicolai M. Josuttis 2001.
+Copyright: 2001, Nicolai M. Josuttis
 License: other
     Permission to copy, use, modify, sell and distribute this software
     is granted provided this copyright notice appears in all copies.
@@ -38,9 +38,9 @@ License: other
     warranty, and with no claim as to its suitability for any purpose.
 
 Files: src/include/hash_*
-Copyright: Copyright 2006, Alexander Fuchs
-Copyright: Copyright (c) 1996,1997 Silicon Graphics Computer Systems, Inc.
-Copyright: Copyright (c) 1994 Hewlett-Packard Company
+Copyright: 2006, Alexander Fuchs
+           1996,1997 Silicon Graphics Computer Systems, Inc.
+           1994, Hewlett-Packard Company
 License: other
     License to use, copy, modify, sell and/or distribute this software
     and its documentation for any purpose is hereby granted without
@@ -67,7 +67,7 @@ License: other
 
 
 Files: src/sat/minisat_*
-Copyright: Copyright (c) 2003-2005, Niklas Een, Niklas Sorensson
+Copyright: 2003-2005, Niklas Een, Niklas Sorensson
 License: MIT
     Permission is hereby granted, free of charge, to any person
     obtaining a copy of this software and associated documentation
@@ -90,8 +90,8 @@ License: MIT
     DEALINGS IN THE SOFTWARE.
 
 Files: debian/*
-Copyright: Copyright 2007-2008, Dan Sheridan <djs@adelard.com>
-Copyright: Copyright 2009, Christopher L. Conway <cconway@cs.nyu.edu> 
+Copyright: 2009-2012, Christopher L. Conway <cconway@cs.nyu.edu> 
+           2007-2008, Dan Sheridan <djs@adelard.com>
 License: BSD
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
