@@ -23,7 +23,7 @@ ELCDIR=/usr/share/${FLAVOR}/site-lisp/${PACKAGE}
 install -m 755 -d ${ELCDIR}
 cd ${ELCDIR}
 for ELFILE in ${ELDIR}/*.el; do
-  ln -s ${ELFILE}
+  ln -sf ${ELFILE}
 done
 
 cat << EOF > path.el
