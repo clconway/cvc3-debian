@@ -1,3 +1,13 @@
+cvc3 (2.4.1-4) unstable; urgency=low
+
+  * Transfer package repo to Git.
+  * Fix syntax errors in debian/copyright.
+  * Keep 50cvc3-el.el after remove. (Closes: #684351)
+  * Use ln -sf when linking cvc3-el emacsen files. (Closes: #684026)
+  * Remove build dep on gcj-native-helper. (Closes: #678183)
+
+ -- Christopher L. Conway <cconway@cs.nyu.edu>  Sun, 12 Aug 2012 17:15:51 -0400
+
 cvc3 (2.4.1-3) unstable; urgency=low
 
   * Create new package libcvc3-dev to replace libcvc3-5-dev and
