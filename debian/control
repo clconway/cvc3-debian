@@ -2,7 +2,7 @@ Source: cvc3
 Section: math
 Priority: extra
 Maintainer: Christopher L. Conway <cconway@cs.nyu.edu>
-Build-Depends: cdbs, debhelper (>= 7), autoconf, autotools-dev, bison, default-jdk, gcj-native-helper, flex, libgmp-dev | libgmp3-dev, patchutils, python
+Build-Depends: cdbs, debhelper (>= 7), autoconf, autotools-dev, bison, default-jdk, flex, libgmp-dev | libgmp3-dev, patchutils, python
 Standards-Version: 3.9.3
 Homepage: http://www.cs.nyu.edu/acsys/cvc3/
 Vcs-Git: https://github.com/clconway/cvc3-debian.git
